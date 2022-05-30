@@ -15,15 +15,18 @@ describe("Cycle", () => {
   });
 
   it("Running out to get max cycles", async (t) => {
+    // write method
     // const tx = await contract.populateTransaction.runOut();
     // tx.gasLimit = "0x1C9C380"; //30m
     // const txRes = await contract.signer.sendTransaction(tx);
     // console.log(txRes);
     // await txRes.wait();
-    console.log(
-      "    loop count:",
-      (await contract.callStatic.runOut()).toString()
-    );
+    
+    // read method
+    // console.log(
+    //   "    loop count:",
+    //   (await contract.callStatic.runOut()).toString()
+    // );
     t.pass();
   });
 });
